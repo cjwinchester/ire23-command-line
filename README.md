@@ -7,12 +7,13 @@ This repo contains materials for a one-hour workshop at the IRE 2023 conference 
 The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` on the first floor.
 
 ### Course outline
-- What, would you say, we're doing here? Command-line workflow pros and cons
+- What, would you say, are we doing here? Some command-line workflow pros and cons
 - What if you work on a PC?
     - [Activate the Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)
     - Use [Powershell](https://learn.microsoft.com/en-us/powershell)
+- Get yourself a good text editor like [Sublime](https://www.sublimetext.com/) or [VS Code](https://code.visualstudio.com/)
 - Introduction to `Terminal`
-- Starting at home  `~`
+- Navigating the file system starts at home: `~`
 - Where am I? `pwd`
 - Printing text with `echo`
 - Moving around with `cd`
@@ -39,7 +40,7 @@ The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` 
 - Getting help with `man`
 - Using handy CLI utilities
     - [`curl`](https://curl.se/) (HTTP client)
-    - [`pdftotext`]https://www.xpdfreader.com/index.html() and other `xpdf` tools (working with PDFs)
+    - [`pdftotext`](https://www.xpdfreader.com/index.html) and other `xpdf` tools (working with PDFs)
         - `pdftotext -table kristi-noem-campfin.pdf`
     - [`youtube-dl`](https://youtube-dl.org/) (archiving YouTube videos)
     - [`csvkit`](https://csvkit.readthedocs.io/en/latest/) (working with tabular data files)
@@ -47,6 +48,7 @@ The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` 
         - `in2csv MLB2018.xlsx > mlb2018.csv`
         - `in2csv MLB2018.xlsx | csvcut -c TEAM | sort | uniq`
     - [`csvmatch`](https://github.com/maxharlow/csvmatch) (fuzzy matching between tabular data files)
+        - `csvmatch data1.csv data2.csv --fields1 name --fields2 'Person Name'`
     - [`ffmpeg`](https://ffmpeg.org/) (audio and video editing)
     - [`imagemagick`](https://imagemagick.org/index.php) (image manipulation)
     - [`git`](https://git-scm.com/) (version control)
@@ -58,6 +60,11 @@ The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` 
     - ... etc.
 - Working with databases (postgres, sqlite, etc.)
 - A more complicated example putting a few things together -- download 2023 Congressional financial disclosure and get some stats: `curl https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2023FD.ZIP > congress_disclosures_2023.zip && unzip congress_disclosures_2023.zip && csvstat -t 2023FD.txt`
+
+### Practice
+- Use `youtube-dl` to download a video, but pipe the output to `ffmpeg` to cut all but the first 10 seconds and redirect the output to file
+- Use `curl` and `csvkit` to download a file from an open data registry of your choice and cut out just the columns of interest, then write to file ([here's a good collection](https://data.cms.gov/))
+- Use `pdftotext` and a good text editor to clean up messy data tables in a PDF (bonus: Use [regular expressions](https://www.regular-expressions.info/) to help clean it up!)
 
 ### Highly recommend
 - [Oh My Zsh](https://ohmyz.sh/)
