@@ -9,8 +9,9 @@ The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` 
 ### Course outline
 - What, would you say, are we doing here? Some command-line workflow pros and cons
 - What if you work on a PC?
-    - [Activate the Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)
-    - Use [Powershell](https://learn.microsoft.com/en-us/powershell)
+    - [See this comparison chart](https://docs.google.com/document/d/1zAzcXbTCt4JvS_P2dZNefsmNH6aMBOQ5MENGTo-Ujv8/edit?usp=sharing)
+    - My recommendation: [Activate the Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)
+    - You can also use [Powershell](https://learn.microsoft.com/en-us/powershell) or similar
 - Get yourself a good text editor like [Sublime](https://www.sublimetext.com/) or [VS Code](https://code.visualstudio.com/)
 - Introduction to `Terminal`
 - Navigating the file system starts at home: `~`
