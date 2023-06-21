@@ -6,6 +6,8 @@ This repo contains materials for a one-hour workshop at the IRE 2023 conference 
 
 The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` on the first floor.
 
+Also check out "Finding needles in haystacks," an introduction to using the command-line software `csvmatch`, immediately following this class in the same room.
+
 ### Course outline
 - What, would you say, are we doing here? Some command-line workflow pros and cons
 - What if you work on a PC?
@@ -39,7 +41,7 @@ The session is scheduled for Saturday, June 24, from 3-4 p.m. in room `Coral A` 
 - Counting lines with `wc` (with the `-l` flag to count rows)
 - Unzipping archives with `unzip`
 - Getting help with `man`
-- Using handy CLI utilities
+- Using CLI software (installed separately)
     - [`curl`](https://curl.se/) (HTTP client)
     - [`pdftotext`](https://www.xpdfreader.com/index.html) and other `xpdf` tools (working with PDFs)
         - `pdftotext -table kristi-noem-campfin.pdf`
