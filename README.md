@@ -73,3 +73,4 @@ Also check out "Finding needles in haystacks," an introduction to using the comm
 - [Oh My Zsh](https://ohmyz.sh/)
 - [iTerm2](https://iterm2.com/)
 - [A.J. Vicens' command-line tutorial](https://github.com/AJVicens/command-line-for-reporters)
+- [MIT's "Missing Semester" course on the command line](https://missing.csail.mit.edu/)
